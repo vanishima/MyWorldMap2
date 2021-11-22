@@ -5,8 +5,9 @@
   "license": "MIT",
   "author": "Shushu Chen",
   "scripts": {
-    "start": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www",
-    "deploy-build": "cd my-world-map-front && yarn install && yarn run build",
+    "start": "node ./bin/www",
+    "nodemon": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www",
+    "deploy-build": "YARN_PRODUCTION=false yarn install --prefix my-world-map-front && yarn run build --prefix my-world-map-front",
     "heroku-postbuild": "YARN_PRODUCTION=false yarn install --prefix my-world-map-front && yarn run build --prefix my-world-map-front"
   },
   "dependencies": {
