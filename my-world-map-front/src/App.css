@@ -1,0 +1,54 @@
+.none-style {
+  text-decoration: none;
+  color: #000000;
+}
+
+.right {
+  float: right;
+  margin-right: auto;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 4rem;
+  left: 1rem;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+}
+
+.search {
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px;
+  z-index: 10;
+}
+
+.search input {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.locate {
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  z-index: 0;
+}
+
+.locate img {
+  width: 30px;
+  cursor: pointer;
+}
