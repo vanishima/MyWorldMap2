@@ -8,7 +8,7 @@
     "start": "node ./bin/www",
     "nodemon": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www",
     "deploy-build": "yarn install --prefix my-world-map-front && yarn run build --prefix my-world-map-front",
-    "heroku-postbuild": "yarn run build --prefix my-world-map-front"
+    "heroku-postbuild": "yarn build --prefix my-world-map-front"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
