@@ -8,7 +8,7 @@
     "start": "node ./bin/www",
     "nodemon": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www",
     "deploy-build": "YARN_PRODUCTION=false yarn install --prefix my-world-map-front && yarn run build --prefix my-world-map-front",
-    "heroku-postbuild": "YARN_PRODUCTION=false yarn install --prefix my-world-map-front && yarn run build --prefix my-world-map-front"
+    "heroku-postbuild": "YARN_PRODUCTION=false yarn install --frozen-lockfile --prefix my-world-map-front && yarn run build --prefix my-world-map-front"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
