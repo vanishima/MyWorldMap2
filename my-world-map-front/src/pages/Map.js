@@ -94,6 +94,7 @@ export default function App() {
 
   React.useEffect(() => {
     console.log("### EFFECT ###");
+    console.log("======= TEST.ME", process.env.TEST_ME);
     drawPosts(setPosts);
   }, []);
 
